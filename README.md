@@ -7,10 +7,10 @@ Output: (click for the animation)
 
 <!--![alt src](render.png "Video")-->
 
-<!--<a style="float:right" href="https://gfycat.com/DearestKnobbyKoodoo" target="_blank">
+<a style="float:right" href="https://gfycat.com/DearestKnobbyKoodoo" target="_blank">
   <img alt="PicSciP Demo Video" src="render.png" />
 </a>
--->
+
 ~200k views so far
 
 # Code
