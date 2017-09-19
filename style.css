@@ -1,0 +1,21 @@
+#viz {
+	width: 1800px;
+	height: 1300px;
+	background: lightblue;
+}
+
+.land{fill:white;}
+.shenzhen{fill:#ddd;}
+.ae {stroke:#00888a; fill: none;}
+.dn {stroke:#f173ac; fill: none;}
+.er {stroke:#53b7e8; fill: none;}
+.il {stroke:#007dc5; fill: none;}
+.kt {stroke:#00ab4e; fill: none;}
+.mos {stroke:#923011; fill: none;}
+.sie {stroke:#bac429; fill: none;}
+.tko {stroke:#7d499d; fill: none;}
+.tw {stroke:#ed1d24; fill: none;}
+.tc {stroke:#f7943e; fill: none;}
+.wr {stroke:#a3238f; fill: none;}
+.lr {stroke:#d3a809; fill: none;}
+.np {stroke:#94989a; fill: none;}

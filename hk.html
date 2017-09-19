@@ -1,0 +1,73 @@
+<style type="text/css">
+
+  body{
+    filter: contrast(1.9);
+    padding: 0;
+    margin: 0;
+  }
+  svg {
+    background: #34495E !important; 
+  }
+
+  .shenzhen{
+    fill:black!important;
+    opacity: 0.1!important
+
+  }
+
+  #viz {
+        width: 1800px;
+        height: 1300px;
+        background: lightblue;
+    }
+
+    .land{fill:white;}
+    .shenzhen{fill:#ddd;}
+    .ae {stroke:#00888a; fill: none;}
+    .dn {stroke:#f173ac; fill: none;}
+    .er {stroke:#53b7e8; fill: none;}
+    .il {stroke:#007dc5; fill: none;}
+    .kt {stroke:#00ab4e; fill: none;}
+    .mos {stroke:#923011; fill: none;}
+    .sie {stroke:#bac429; fill: none;}
+    .tko {stroke:#7d499d; fill: none;}
+    .tw {stroke:#ed1d24; fill: none;}
+    .tc {stroke:#f7943e; fill: none;}
+    .wr {stroke:#a3238f; fill: none;}
+    .lr {stroke:#d3a809; fill: none;}
+    .np {stroke:#94989a; fill: none;}
+
+    #particules{
+        filter: url('#dropshadow')
+    }
+
+    #particules2{
+        /*filter: url('#goo')*/
+    }
+</style>
+
+
+<svg id="viz">
+<defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" />
+      <feColorMatrix in="blur" result="colormatrix" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -2" />
+      <feBlend in="SourceGraphic" in2="colormatrix" />
+    </filter>
+
+<filter id="dropshadow" height="130%">
+  <feGaussianBlur in="SourceAlpha" stdDeviation="1"/> <!-- stdDeviation is how much to blur -->
+  <feOffset dx="0" dy="0" result="offsetblur"/> <!-- how much to offset -->
+  <feMerge> 
+    <feMergeNode/> <!-- this contains the offset blurred image -->
+    <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+  </feMerge>
+</filter>
+</defs>
+</svg>
+
+<script src="d3.v4.js"></script>
+<script src="https://cdn.jsdelivr.net/kute.js/1.6.2/kute.min.js"></script>
+<script src='https://cdn.jsdelivr.net/kute.js/1.6.2/kute-svg.min.js'></script>
+<script src="hk.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

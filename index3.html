@@ -1,0 +1,16 @@
+<style type="text/css">
+	body{
+		padding: 0;
+		margin: 0;
+	}
+</style>
+<img src="mtr.jpg">
+
+<script src="d3.v4.js"></script>
+<script type="text/javascript">
+	s = 'M'
+	d3.select('img').on('click',function(){
+		s+=d3.mouse(this)[0]/2+ ' '+ d3.mouse(this)[1]/2 + 'L' + ' '
+		console.log(s)
+	})
+</script>
